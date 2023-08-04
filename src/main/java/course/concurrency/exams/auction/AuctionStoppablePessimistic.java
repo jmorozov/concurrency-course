@@ -2,19 +2,26 @@ package course.concurrency.exams.auction;
 
 public class AuctionStoppablePessimistic implements AuctionStoppable {
 
-    private Notifier notifier;
+    private final Notifier notifier;
 
     public AuctionStoppablePessimistic(Notifier notifier) {
         this.notifier = notifier;
+        this.latestBid = new Bid(-1L, -1L, -1L);
     }
 
-    private Bid latestBid;
+    private volatile Bid latestBid;
+    private final Object lock = new Object();
+    private volatile Boolean running = true;
 
     public boolean propose(Bid bid) {
-        if (bid.getPrice() > latestBid.getPrice()) {
-            notifier.sendOutdatedMessage(latestBid);
-            latestBid = bid;
-            return true;
+        if (running && (bid.getPrice() > latestBid.getPrice())) {
+            synchronized (lock) {
+                if (running && (bid.getPrice() > latestBid.getPrice())) {
+                    notifier.sendOutdatedMessage(latestBid);
+                    latestBid = bid;
+                    return true;
+                }
+            }
         }
         return false;
     }
@@ -24,6 +31,9 @@ public class AuctionStoppablePessimistic implements AuctionStoppable {
     }
 
     public Bid stopAuction() {
-        return latestBid;
+        synchronized (lock) {
+            running = false;
+            return latestBid;
+        }
     }
 }
