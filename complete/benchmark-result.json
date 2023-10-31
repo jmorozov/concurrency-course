@@ -1,0 +1,1692 @@
+[
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.Atomic",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1291007.4286047486,
+            "scoreError" : 396511.62804916507,
+            "scoreConfidence" : [
+                894495.8005555836,
+                1687519.0566539136
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1150342.3070347882,
+                "50.0" : 1357764.2478043789,
+                "90.0" : 1372122.7830512205,
+                "95.0" : 1372122.7830512205,
+                "99.0" : 1372122.7830512205,
+                "99.9" : 1372122.7830512205,
+                "99.99" : 1372122.7830512205,
+                "99.999" : 1372122.7830512205,
+                "99.9999" : 1372122.7830512205,
+                "100.0" : 1372122.7830512205
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1211361.8811194377,
+                    1372122.7830512205,
+                    1357764.2478043789,
+                    1150342.3070347882,
+                    1363445.9240139173
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readAtomic" : {
+                "score" : 1256892.958002481,
+                "scoreError" : 396507.0502428225,
+                "scoreConfidence" : [
+                    860385.9077596584,
+                    1653400.0082453033
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 1116214.3512872627,
+                    "50.0" : 1323540.263971047,
+                    "90.0" : 1338122.7111596249,
+                    "95.0" : 1338122.7111596249,
+                    "99.0" : 1338122.7111596249,
+                    "99.9" : 1338122.7111596249,
+                    "99.99" : 1338122.7111596249,
+                    "99.999" : 1338122.7111596249,
+                    "99.9999" : 1338122.7111596249,
+                    "100.0" : 1338122.7111596249
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        1177280.2325480904,
+                        1338122.7111596249,
+                        1323540.263971047,
+                        1116214.3512872627,
+                        1329307.2310463798
+                    ]
+                ]
+            },
+            "writeAtomic" : {
+                "score" : 34114.47060226758,
+                "scoreError" : 315.9292638684048,
+                "scoreConfidence" : [
+                    33798.541338399176,
+                    34430.39986613599
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 34000.07189159552,
+                    "50.0" : 34127.95574752553,
+                    "90.0" : 34223.98383333203,
+                    "95.0" : 34223.98383333203,
+                    "99.0" : 34223.98383333203,
+                    "99.9" : 34223.98383333203,
+                    "99.99" : 34223.98383333203,
+                    "99.999" : 34223.98383333203,
+                    "99.9999" : 34223.98383333203,
+                    "100.0" : 34223.98383333203
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        34081.64857134713,
+                        34000.07189159552,
+                        34223.98383333203,
+                        34127.95574752553,
+                        34138.69296753774
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.AtomicLong_counter",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1381496.3072266164,
+            "scoreError" : 73492.30725658002,
+            "scoreConfidence" : [
+                1308003.9999700363,
+                1454988.6144831965
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1349660.664440656,
+                "50.0" : 1391637.9067222604,
+                "90.0" : 1394914.95242761,
+                "95.0" : 1394914.95242761,
+                "99.0" : 1394914.95242761,
+                "99.9" : 1394914.95242761,
+                "99.99" : 1394914.95242761,
+                "99.999" : 1394914.95242761,
+                "99.9999" : 1394914.95242761,
+                "100.0" : 1394914.95242761
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1349660.664440656,
+                    1394914.95242761,
+                    1377684.248029371,
+                    1391637.9067222604,
+                    1393583.7645131848
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readAtomicLong" : {
+                "score" : 1363409.2243603845,
+                "scoreError" : 73551.74798292309,
+                "scoreConfidence" : [
+                    1289857.4763774613,
+                    1436960.9723433077
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 1331532.972700922,
+                    "50.0" : 1373603.9568711135,
+                    "90.0" : 1376751.4585493698,
+                    "95.0" : 1376751.4585493698,
+                    "99.0" : 1376751.4585493698,
+                    "99.9" : 1376751.4585493698,
+                    "99.99" : 1376751.4585493698,
+                    "99.999" : 1376751.4585493698,
+                    "99.9999" : 1376751.4585493698,
+                    "100.0" : 1376751.4585493698
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        1331532.972700922,
+                        1376751.4585493698,
+                        1359622.6897985686,
+                        1373603.9568711135,
+                        1375535.0438819486
+                    ]
+                ]
+            },
+            "writeAtomicLong" : {
+                "score" : 18087.08286623198,
+                "scoreError" : 214.6885829923743,
+                "scoreConfidence" : [
+                    17872.394283239606,
+                    18301.771449224354
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 18033.949851147187,
+                    "50.0" : 18061.55823080218,
+                    "90.0" : 18163.49387824011,
+                    "95.0" : 18163.49387824011,
+                    "99.0" : 18163.49387824011,
+                    "99.9" : 18163.49387824011,
+                    "99.99" : 18163.49387824011,
+                    "99.999" : 18163.49387824011,
+                    "99.9999" : 18163.49387824011,
+                    "100.0" : 18163.49387824011
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        18127.69173973415,
+                        18163.49387824011,
+                        18061.55823080218,
+                        18033.949851147187,
+                        18048.720631236265
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.Atomic_accumulate",
+        "mode" : "thrpt",
+        "threads" : 8,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 6010.47175606818,
+            "scoreError" : 505.9701746139427,
+            "scoreConfidence" : [
+                5504.501581454238,
+                6516.441930682123
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5918.616840416385,
+                "50.0" : 5974.780372883038,
+                "90.0" : 6240.706963157636,
+                "95.0" : 6240.706963157636,
+                "99.0" : 6240.706963157636,
+                "99.9" : 6240.706963157636,
+                "99.99" : 6240.706963157636,
+                "99.999" : 6240.706963157636,
+                "99.9999" : 6240.706963157636,
+                "100.0" : 6240.706963157636
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    5918.616840416385,
+                    5982.264627687975,
+                    5974.780372883038,
+                    6240.706963157636,
+                    5935.989976195871
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.Atomic_optimistic",
+        "mode" : "thrpt",
+        "threads" : 8,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 23800.93669343648,
+            "scoreError" : 284.7316607540365,
+            "scoreConfidence" : [
+                23516.205032682443,
+                24085.66835419052
+            ],
+            "scorePercentiles" : {
+                "0.0" : 23721.44180693309,
+                "50.0" : 23800.733861893776,
+                "90.0" : 23905.374707406343,
+                "95.0" : 23905.374707406343,
+                "99.0" : 23905.374707406343,
+                "99.9" : 23905.374707406343,
+                "99.99" : 23905.374707406343,
+                "99.999" : 23905.374707406343,
+                "99.9999" : 23905.374707406343,
+                "100.0" : 23905.374707406343
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    23721.44180693309,
+                    23905.374707406343,
+                    23741.994084874575,
+                    23835.13900607462,
+                    23800.733861893776
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.LongAdder_counter",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 138767.62823829573,
+            "scoreError" : 4634.580819777703,
+            "scoreConfidence" : [
+                134133.04741851802,
+                143402.20905807344
+            ],
+            "scorePercentiles" : {
+                "0.0" : 137201.34161395492,
+                "50.0" : 138741.40641087978,
+                "90.0" : 140489.02549733047,
+                "95.0" : 140489.02549733047,
+                "99.0" : 140489.02549733047,
+                "99.9" : 140489.02549733047,
+                "99.99" : 140489.02549733047,
+                "99.999" : 140489.02549733047,
+                "99.9999" : 140489.02549733047,
+                "100.0" : 140489.02549733047
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    139132.7302342733,
+                    140489.02549733047,
+                    138273.63743504023,
+                    137201.34161395492,
+                    138741.40641087978
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readLongAdder" : {
+                "score" : 49418.948147958625,
+                "scoreError" : 1921.7335909981641,
+                "scoreConfidence" : [
+                    47497.21455696046,
+                    51340.68173895679
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 48876.259531037445,
+                    "50.0" : 49273.89416678626,
+                    "90.0" : 50051.55883124547,
+                    "95.0" : 50051.55883124547,
+                    "99.0" : 50051.55883124547,
+                    "99.9" : 50051.55883124547,
+                    "99.99" : 50051.55883124547,
+                    "99.999" : 50051.55883124547,
+                    "99.9999" : 50051.55883124547,
+                    "100.0" : 50051.55883124547
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        50051.55883124547,
+                        49820.0166382039,
+                        49073.01157252004,
+                        48876.259531037445,
+                        49273.89416678626
+                    ]
+                ]
+            },
+            "writeLongAdder" : {
+                "score" : 89348.6800903371,
+                "scoreError" : 3277.9266424254274,
+                "scoreConfidence" : [
+                    86070.75344791167,
+                    92626.60673276254
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 88325.08208291743,
+                    "50.0" : 89200.62586252022,
+                    "90.0" : 90669.0088591266,
+                    "95.0" : 90669.0088591266,
+                    "99.0" : 90669.0088591266,
+                    "99.9" : 90669.0088591266,
+                    "99.99" : 90669.0088591266,
+                    "99.999" : 90669.0088591266,
+                    "99.9999" : 90669.0088591266,
+                    "100.0" : 90669.0088591266
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        89081.17140302781,
+                        90669.0088591266,
+                        89200.62586252022,
+                        88325.08208291743,
+                        89467.51224409348
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.ReadWriteLock",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 33304.618254200584,
+            "scoreError" : 4931.385010737139,
+            "scoreConfidence" : [
+                28373.233243463445,
+                38236.003264937724
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32015.20681390363,
+                "50.0" : 32811.05903875811,
+                "90.0" : 35231.63873390198,
+                "95.0" : 35231.63873390198,
+                "99.0" : 35231.63873390198,
+                "99.9" : 35231.63873390198,
+                "99.99" : 35231.63873390198,
+                "99.999" : 35231.63873390198,
+                "99.9999" : 35231.63873390198,
+                "100.0" : 35231.63873390198
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    33914.66591129484,
+                    32811.05903875811,
+                    32015.20681390363,
+                    32550.52077314435,
+                    35231.63873390198
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readReadWriteLock" : {
+                "score" : 7879.798205247105,
+                "scoreError" : 664.819941637922,
+                "scoreConfidence" : [
+                    7214.978263609183,
+                    8544.618146885026
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 7748.370019289331,
+                    "50.0" : 7813.517765564905,
+                    "90.0" : 8182.448996410767,
+                    "95.0" : 8182.448996410767,
+                    "99.0" : 8182.448996410767,
+                    "99.9" : 8182.448996410767,
+                    "99.99" : 8182.448996410767,
+                    "99.999" : 8182.448996410767,
+                    "99.9999" : 8182.448996410767,
+                    "100.0" : 8182.448996410767
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        7813.517765564905,
+                        7748.370019289331,
+                        7842.557731179977,
+                        7812.096513790544,
+                        8182.448996410767
+                    ]
+                ]
+            },
+            "writeReadWriteLock" : {
+                "score" : 25424.820048953476,
+                "scoreError" : 4418.270680112617,
+                "scoreConfidence" : [
+                    21006.54936884086,
+                    29843.09072906609
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 24172.649082723656,
+                    "50.0" : 25062.689019468777,
+                    "90.0" : 27049.18973749121,
+                    "95.0" : 27049.18973749121,
+                    "99.0" : 27049.18973749121,
+                    "99.9" : 27049.18973749121,
+                    "99.99" : 27049.18973749121,
+                    "99.999" : 27049.18973749121,
+                    "99.9999" : 27049.18973749121,
+                    "100.0" : 27049.18973749121
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        26101.14814572993,
+                        25062.689019468777,
+                        24172.649082723656,
+                        24738.424259353807,
+                        27049.18973749121
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.ReadWriteLock_fair",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 437.2051929493343,
+            "scoreError" : 16.31205642891746,
+            "scoreConfidence" : [
+                420.8931365204168,
+                453.51724937825173
+            ],
+            "scorePercentiles" : {
+                "0.0" : 429.80817325730544,
+                "50.0" : 438.7991569490956,
+                "90.0" : 440.01649349234395,
+                "95.0" : 440.01649349234395,
+                "99.0" : 440.01649349234395,
+                "99.9" : 440.01649349234395,
+                "99.99" : 440.01649349234395,
+                "99.999" : 440.01649349234395,
+                "99.9999" : 440.01649349234395,
+                "100.0" : 440.01649349234395
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    440.01649349234395,
+                    439.7368952743883,
+                    437.6652457735381,
+                    438.7991569490956,
+                    429.80817325730544
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readReadWriteLockFair" : {
+                "score" : 218.51690121251946,
+                "scoreError" : 7.9365537330272815,
+                "scoreConfidence" : [
+                    210.58034747949216,
+                    226.45345494554675
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 214.9039052111048,
+                    "50.0" : 219.40029579513353,
+                    "90.0" : 220.00212244891526,
+                    "95.0" : 220.00212244891526,
+                    "99.0" : 220.00212244891526,
+                    "99.9" : 220.00212244891526,
+                    "99.99" : 220.00212244891526,
+                    "99.999" : 220.00212244891526,
+                    "99.9999" : 220.00212244891526,
+                    "100.0" : 220.00212244891526
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        220.00212244891526,
+                        219.43762718414487,
+                        218.84055542329867,
+                        219.40029579513353,
+                        214.9039052111048
+                    ]
+                ]
+            },
+            "writeReadWriteLockFair" : {
+                "score" : 218.6882917368148,
+                "scoreError" : 8.43547688868932,
+                "scoreConfidence" : [
+                    210.25281484812547,
+                    227.1237686255041
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 214.9042680462005,
+                    "50.0" : 219.398861153962,
+                    "90.0" : 220.29926809024343,
+                    "95.0" : 220.29926809024343,
+                    "99.0" : 220.29926809024343,
+                    "99.9" : 220.29926809024343,
+                    "99.99" : 220.29926809024343,
+                    "99.999" : 220.29926809024343,
+                    "99.9999" : 220.29926809024343,
+                    "100.0" : 220.29926809024343
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        220.01437104342867,
+                        220.29926809024343,
+                        218.82469035023934,
+                        219.398861153962,
+                        214.9042680462005
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.ReentrantLock",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 68120.62023191841,
+            "scoreError" : 6352.221852617647,
+            "scoreConfidence" : [
+                61768.398379300765,
+                74472.84208453605
+            ],
+            "scorePercentiles" : {
+                "0.0" : 65736.61443720773,
+                "50.0" : 67870.09313526377,
+                "90.0" : 69714.8295629002,
+                "95.0" : 69714.8295629002,
+                "99.0" : 69714.8295629002,
+                "99.9" : 69714.8295629002,
+                "99.99" : 69714.8295629002,
+                "99.999" : 69714.8295629002,
+                "99.9999" : 69714.8295629002,
+                "100.0" : 69714.8295629002
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    65736.61443720773,
+                    67626.75109343918,
+                    67870.09313526377,
+                    69654.81293078119,
+                    69714.8295629002
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readReentrantLock" : {
+                "score" : 28054.804931953295,
+                "scoreError" : 7009.513465337127,
+                "scoreConfidence" : [
+                    21045.291466616167,
+                    35064.31839729042
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 26001.3174629711,
+                    "50.0" : 28962.99890683091,
+                    "90.0" : 29983.085891255396,
+                    "95.0" : 29983.085891255396,
+                    "99.0" : 29983.085891255396,
+                    "99.9" : 29983.085891255396,
+                    "99.99" : 29983.085891255396,
+                    "99.999" : 29983.085891255396,
+                    "99.9999" : 29983.085891255396,
+                    "100.0" : 29983.085891255396
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        29983.085891255396,
+                        26216.203086643945,
+                        26001.3174629711,
+                        29110.41931206512,
+                        28962.99890683091
+                    ]
+                ]
+            },
+            "writeReentrantLock" : {
+                "score" : 40065.81529996512,
+                "scoreError" : 9501.50651242624,
+                "scoreConfidence" : [
+                    30564.30878753888,
+                    49567.32181239136
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 35753.52854595234,
+                    "50.0" : 40751.83065606928,
+                    "90.0" : 41868.775672292664,
+                    "95.0" : 41868.775672292664,
+                    "99.0" : 41868.775672292664,
+                    "99.9" : 41868.775672292664,
+                    "99.99" : 41868.775672292664,
+                    "99.999" : 41868.775672292664,
+                    "99.9999" : 41868.775672292664,
+                    "100.0" : 41868.775672292664
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        35753.52854595234,
+                        41410.54800679522,
+                        41868.775672292664,
+                        40544.393618716094,
+                        40751.83065606928
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.ReentrantLock_fair",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 463.8741123360933,
+            "scoreError" : 97.67228455153348,
+            "scoreConfidence" : [
+                366.2018277845598,
+                561.5463968876268
+            ],
+            "scorePercentiles" : {
+                "0.0" : 443.49244901378995,
+                "50.0" : 455.15517010430807,
+                "90.0" : 508.12174724906663,
+                "95.0" : 508.12174724906663,
+                "99.0" : 508.12174724906663,
+                "99.9" : 508.12174724906663,
+                "99.99" : 508.12174724906663,
+                "99.999" : 508.12174724906663,
+                "99.9999" : 508.12174724906663,
+                "100.0" : 508.12174724906663
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    443.49244901378995,
+                    455.15517010430807,
+                    458.4878629818833,
+                    454.11333233141846,
+                    508.12174724906663
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readReentrantLockFair" : {
+                "score" : 229.2653568497145,
+                "scoreError" : 29.823881216914188,
+                "scoreConfidence" : [
+                    199.4414756328003,
+                    259.0892380666287
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 221.37781674916397,
+                    "50.0" : 227.5758120012335,
+                    "90.0" : 242.26528853496782,
+                    "95.0" : 242.26528853496782,
+                    "99.0" : 242.26528853496782,
+                    "99.9" : 242.26528853496782,
+                    "99.99" : 242.26528853496782,
+                    "99.999" : 242.26528853496782,
+                    "99.9999" : 242.26528853496782,
+                    "100.0" : 242.26528853496782
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        221.37781674916397,
+                        227.5758120012335,
+                        227.66892934481191,
+                        227.4389376183953,
+                        242.26528853496782
+                    ]
+                ]
+            },
+            "writeReentrantLockFair" : {
+                "score" : 234.60875548637878,
+                "scoreError" : 68.32184322488683,
+                "scoreConfidence" : [
+                    166.28691226149195,
+                    302.9305987112656
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 222.114632264626,
+                    "50.0" : 227.5793581030745,
+                    "90.0" : 265.8564587140987,
+                    "95.0" : 265.8564587140987,
+                    "99.0" : 265.8564587140987,
+                    "99.9" : 265.8564587140987,
+                    "99.99" : 265.8564587140987,
+                    "99.999" : 265.8564587140987,
+                    "99.9999" : 265.8564587140987,
+                    "100.0" : 265.8564587140987
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        222.114632264626,
+                        227.5793581030745,
+                        230.81893363707147,
+                        226.6743947130232,
+                        265.8564587140987
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.Semaphore",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 39231.88437571806,
+            "scoreError" : 484.2516353691645,
+            "scoreConfidence" : [
+                38747.63274034889,
+                39716.13601108723
+            ],
+            "scorePercentiles" : {
+                "0.0" : 39121.74709275563,
+                "50.0" : 39217.01321145917,
+                "90.0" : 39424.0806502846,
+                "95.0" : 39424.0806502846,
+                "99.0" : 39424.0806502846,
+                "99.9" : 39424.0806502846,
+                "99.99" : 39424.0806502846,
+                "99.999" : 39424.0806502846,
+                "99.9999" : 39424.0806502846,
+                "100.0" : 39424.0806502846
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    39424.0806502846,
+                    39121.76258734365,
+                    39274.81833674723,
+                    39121.74709275563,
+                    39217.01321145917
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readSemaphore" : {
+                "score" : 19696.846651853546,
+                "scoreError" : 485.41796714761404,
+                "scoreConfidence" : [
+                    19211.428684705934,
+                    20182.26461900116
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 19571.008576230673,
+                    "50.0" : 19648.193363268983,
+                    "90.0" : 19893.246607536897,
+                    "95.0" : 19893.246607536897,
+                    "99.0" : 19893.246607536897,
+                    "99.9" : 19893.246607536897,
+                    "99.99" : 19893.246607536897,
+                    "99.999" : 19893.246607536897,
+                    "99.9999" : 19893.246607536897,
+                    "100.0" : 19893.246607536897
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        19893.246607536897,
+                        19571.008576230673,
+                        19743.123082897233,
+                        19648.193363268983,
+                        19628.661629333943
+                    ]
+                ]
+            },
+            "writeSemaphore" : {
+                "score" : 19535.03772386451,
+                "scoreError" : 159.91179698885824,
+                "scoreConfidence" : [
+                    19375.12592687565,
+                    19694.949520853366
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 19473.553729486644,
+                    "50.0" : 19531.695253849994,
+                    "90.0" : 19588.351582125226,
+                    "95.0" : 19588.351582125226,
+                    "99.0" : 19588.351582125226,
+                    "99.9" : 19588.351582125226,
+                    "99.99" : 19588.351582125226,
+                    "99.999" : 19588.351582125226,
+                    "99.9999" : 19588.351582125226,
+                    "100.0" : 19588.351582125226
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        19530.834042747705,
+                        19550.754011112982,
+                        19531.695253849994,
+                        19473.553729486644,
+                        19588.351582125226
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.Semaphore_fair",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 462.8668331847375,
+            "scoreError" : 18.313950251743602,
+            "scoreConfidence" : [
+                444.5528829329939,
+                481.18078343648114
+            ],
+            "scorePercentiles" : {
+                "0.0" : 455.2888093185226,
+                "50.0" : 463.33520416368646,
+                "90.0" : 468.43577447276675,
+                "95.0" : 468.43577447276675,
+                "99.0" : 468.43577447276675,
+                "99.9" : 468.43577447276675,
+                "99.99" : 468.43577447276675,
+                "99.999" : 468.43577447276675,
+                "99.9999" : 468.43577447276675,
+                "100.0" : 468.43577447276675
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    464.2007343535147,
+                    455.2888093185226,
+                    463.0736436151967,
+                    463.33520416368646,
+                    468.43577447276675
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readSemaphoreFair" : {
+                "score" : 231.19860383833762,
+                "scoreError" : 9.277296977303644,
+                "scoreConfidence" : [
+                    221.92130686103397,
+                    240.47590081564127
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 227.64642821208733,
+                    "50.0" : 231.0687529337631,
+                    "90.0" : 234.21960870868176,
+                    "95.0" : 234.21960870868176,
+                    "99.0" : 234.21960870868176,
+                    "99.9" : 234.21960870868176,
+                    "99.99" : 234.21960870868176,
+                    "99.999" : 234.21960870868176,
+                    "99.9999" : 234.21960870868176,
+                    "100.0" : 234.21960870868176
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        232.31615032649785,
+                        227.64642821208733,
+                        231.0687529337631,
+                        230.74207901065807,
+                        234.21960870868176
+                    ]
+                ]
+            },
+            "writeSemaphoreFair" : {
+                "score" : 231.66822934639987,
+                "scoreError" : 9.375945643110125,
+                "scoreConfidence" : [
+                    222.29228370328974,
+                    241.04417498951
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 227.64238110643524,
+                    "50.0" : 232.00489068143366,
+                    "90.0" : 234.216165764085,
+                    "95.0" : 234.216165764085,
+                    "99.0" : 234.216165764085,
+                    "99.9" : 234.216165764085,
+                    "99.99" : 234.216165764085,
+                    "99.999" : 234.216165764085,
+                    "99.9999" : 234.216165764085,
+                    "100.0" : 234.216165764085
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        231.8845840270169,
+                        227.64238110643524,
+                        232.00489068143366,
+                        232.5931251530284,
+                        234.216165764085
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.StampedLock_optimistic",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 29004.824258016095,
+            "scoreError" : 83196.81816309864,
+            "scoreConfidence" : [
+                -54191.99390508254,
+                112201.64242111472
+            ],
+            "scorePercentiles" : {
+                "0.0" : 12923.113404478203,
+                "50.0" : 13751.886098551306,
+                "90.0" : 53523.311550083825,
+                "95.0" : 53523.311550083825,
+                "99.0" : 53523.311550083825,
+                "99.9" : 53523.311550083825,
+                "99.99" : 53523.311550083825,
+                "99.999" : 53523.311550083825,
+                "99.9999" : 53523.311550083825,
+                "100.0" : 53523.311550083825
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    13751.886098551306,
+                    13027.234961785349,
+                    12923.113404478203,
+                    53523.311550083825,
+                    51798.57527518178
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readStampedLockOptimistic" : {
+                "score" : 26625.930492130727,
+                "scoreError" : 87554.34673409091,
+                "scoreConfidence" : [
+                    -60928.416241960185,
+                    114180.27722622163
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 9743.884982104193,
+                    "50.0" : 10513.816715762594,
+                    "90.0" : 52356.244463932126,
+                    "95.0" : 52356.244463932126,
+                    "99.0" : 52356.244463932126,
+                    "99.9" : 52356.244463932126,
+                    "99.99" : 52356.244463932126,
+                    "99.999" : 52356.244463932126,
+                    "99.9999" : 52356.244463932126,
+                    "100.0" : 52356.244463932126
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        10513.816715762594,
+                        9825.565211592295,
+                        9743.884982104193,
+                        52356.244463932126,
+                        50690.14108726244
+                    ]
+                ]
+            },
+            "writeStampedLockOptimistic" : {
+                "score" : 2378.8937658853597,
+                "scoreError" : 4364.272189790204,
+                "scoreConfidence" : [
+                    -1985.378423904844,
+                    6743.165955675564
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 1108.4341879193266,
+                    "50.0" : 3179.2284223740103,
+                    "90.0" : 3238.069382788712,
+                    "95.0" : 3238.069382788712,
+                    "99.0" : 3238.069382788712,
+                    "99.9" : 3238.069382788712,
+                    "99.99" : 3238.069382788712,
+                    "99.999" : 3238.069382788712,
+                    "99.9999" : 3238.069382788712,
+                    "100.0" : 3238.069382788712
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        3238.069382788712,
+                        3201.6697501930526,
+                        3179.2284223740103,
+                        1167.0670861516958,
+                        1108.4341879193266
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.StampedLock_readwrite",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 33989.257101831245,
+            "scoreError" : 7869.966526684281,
+            "scoreConfidence" : [
+                26119.290575146963,
+                41859.22362851552
+            ],
+            "scorePercentiles" : {
+                "0.0" : 31827.007643179702,
+                "50.0" : 33586.10784689659,
+                "90.0" : 36915.70083235177,
+                "95.0" : 36915.70083235177,
+                "99.0" : 36915.70083235177,
+                "99.9" : 36915.70083235177,
+                "99.99" : 36915.70083235177,
+                "99.999" : 36915.70083235177,
+                "99.9999" : 36915.70083235177,
+                "100.0" : 36915.70083235177
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    32535.65585336213,
+                    35081.813333366015,
+                    36915.70083235177,
+                    33586.10784689659,
+                    31827.007643179702
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readStampedLockRW" : {
+                "score" : 7913.388844543893,
+                "scoreError" : 3351.9277641144654,
+                "scoreConfidence" : [
+                    4561.461080429428,
+                    11265.316608658359
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 7162.243380585681,
+                    "50.0" : 7668.842772039915,
+                    "90.0" : 9206.388659866658,
+                    "95.0" : 9206.388659866658,
+                    "99.0" : 9206.388659866658,
+                    "99.9" : 9206.388659866658,
+                    "99.99" : 9206.388659866658,
+                    "99.999" : 9206.388659866658,
+                    "99.9999" : 9206.388659866658,
+                    "100.0" : 9206.388659866658
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        7176.980677671734,
+                        8352.488732555477,
+                        9206.388659866658,
+                        7668.842772039915,
+                        7162.243380585681
+                    ]
+                ]
+            },
+            "writeStampedLockRW" : {
+                "score" : 26075.86825728735,
+                "scoreError" : 4566.658981724572,
+                "scoreConfidence" : [
+                    21509.20927556278,
+                    30642.527239011924
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 24664.764262594017,
+                    "50.0" : 25917.26507485668,
+                    "90.0" : 27709.312172485115,
+                    "95.0" : 27709.312172485115,
+                    "99.0" : 27709.312172485115,
+                    "99.9" : 27709.312172485115,
+                    "99.99" : 27709.312172485115,
+                    "99.999" : 27709.312172485115,
+                    "99.9999" : 27709.312172485115,
+                    "100.0" : 27709.312172485115
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        25358.6751756904,
+                        26729.324600810534,
+                        27709.312172485115,
+                        25917.26507485668,
+                        24664.764262594017
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.synchronized",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 64507.78465263844,
+            "scoreError" : 434.43334146088296,
+            "scoreConfidence" : [
+                64073.351311177554,
+                64942.21799409932
+            ],
+            "scorePercentiles" : {
+                "0.0" : 64340.09835094217,
+                "50.0" : 64506.74667683364,
+                "90.0" : 64638.86723459681,
+                "95.0" : 64638.86723459681,
+                "99.0" : 64638.86723459681,
+                "99.9" : 64638.86723459681,
+                "99.99" : 64638.86723459681,
+                "99.999" : 64638.86723459681,
+                "99.9999" : 64638.86723459681,
+                "100.0" : 64638.86723459681
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    64340.09835094217,
+                    64638.86723459681,
+                    64506.74667683364,
+                    64477.090804450076,
+                    64576.120196369484
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readSynchronized" : {
+                "score" : 56954.722295867825,
+                "scoreError" : 12309.085256683478,
+                "scoreConfidence" : [
+                    44645.637039184345,
+                    69263.8075525513
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 51704.50368734842,
+                    "50.0" : 58900.8963068235,
+                    "90.0" : 59157.06977347029,
+                    "95.0" : 59157.06977347029,
+                    "99.0" : 59157.06977347029,
+                    "99.9" : 59157.06977347029,
+                    "99.99" : 59157.06977347029,
+                    "99.999" : 59157.06977347029,
+                    "99.9999" : 59157.06977347029,
+                    "100.0" : 59157.06977347029
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        51704.50368734842,
+                        56080.054979646855,
+                        58931.08673205008,
+                        58900.8963068235,
+                        59157.06977347029
+                    ]
+                ]
+            },
+            "writeSynchronized" : {
+                "score" : 7553.062356770601,
+                "scoreError" : 12056.851499959232,
+                "scoreConfidence" : [
+                    -4503.789143188631,
+                    19609.913856729832
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 5419.050422899189,
+                    "50.0" : 5576.194497626568,
+                    "90.0" : 12635.594663593756,
+                    "95.0" : 12635.594663593756,
+                    "99.0" : 12635.594663593756,
+                    "99.9" : 12635.594663593756,
+                    "99.99" : 12635.594663593756,
+                    "99.999" : 12635.594663593756,
+                    "99.9999" : 12635.594663593756,
+                    "100.0" : 12635.594663593756
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        12635.594663593756,
+                        8558.812254949944,
+                        5575.659944783551,
+                        5576.194497626568,
+                        5419.050422899189
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.volatile",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1742620.553780169,
+            "scoreError" : 48578.6585923664,
+            "scoreConfidence" : [
+                1694041.8951878026,
+                1791199.2123725354
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1724007.6983239667,
+                "50.0" : 1744838.1770138415,
+                "90.0" : 1756265.1636199958,
+                "95.0" : 1756265.1636199958,
+                "99.0" : 1756265.1636199958,
+                "99.9" : 1756265.1636199958,
+                "99.99" : 1756265.1636199958,
+                "99.999" : 1756265.1636199958,
+                "99.9999" : 1756265.1636199958,
+                "100.0" : 1756265.1636199958
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1724007.6983239667,
+                    1744838.1770138415,
+                    1756265.1636199958,
+                    1737092.5569255794,
+                    1750899.1730174602
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readVolatile" : {
+                "score" : 1717945.3741954826,
+                "scoreError" : 49144.444882886666,
+                "scoreConfidence" : [
+                    1668800.9293125959,
+                    1767089.8190783693
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 1699118.7880613797,
+                    "50.0" : 1720208.2766997335,
+                    "90.0" : 1731782.046939055,
+                    "95.0" : 1731782.046939055,
+                    "99.0" : 1731782.046939055,
+                    "99.9" : 1731782.046939055,
+                    "99.99" : 1731782.046939055,
+                    "99.999" : 1731782.046939055,
+                    "99.9999" : 1731782.046939055,
+                    "100.0" : 1731782.046939055
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        1699118.7880613797,
+                        1720208.2766997335,
+                        1731782.046939055,
+                        1712351.5561453414,
+                        1726266.2031319037
+                    ]
+                ]
+            },
+            "writeVolatile" : {
+                "score" : 24675.179584685997,
+                "scoreError" : 579.9447601293095,
+                "scoreConfidence" : [
+                    24095.234824556686,
+                    25255.124344815307
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 24483.11668094084,
+                    "50.0" : 24632.96988555619,
+                    "90.0" : 24888.91026258706,
+                    "95.0" : 24888.91026258706,
+                    "99.0" : 24888.91026258706,
+                    "99.9" : 24888.91026258706,
+                    "99.99" : 24888.91026258706,
+                    "99.999" : 24888.91026258706,
+                    "99.9999" : 24888.91026258706,
+                    "100.0" : 24888.91026258706
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        24888.91026258706,
+                        24629.900314107857,
+                        24483.11668094084,
+                        24741.00078023804,
+                        24632.96988555619
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "course.concurrency.m3_shared.benchmarks.CounterBenchmarks.volatile_synchronized",
+        "mode" : "thrpt",
+        "threads" : 16,
+        "forks" : 1,
+        "jvm" : "/Users/evg/Library/Java/JavaVirtualMachines/liberica-17.0.3/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56228:/Users/evg/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.7571.182/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.3",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.3+7-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4121324.3936470347,
+            "scoreError" : 505902.9795803344,
+            "scoreConfidence" : [
+                3615421.4140667003,
+                4627227.373227369
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3887405.8522925787,
+                "50.0" : 4173994.000877749,
+                "90.0" : 4192941.482031941,
+                "95.0" : 4192941.482031941,
+                "99.0" : 4192941.482031941,
+                "99.9" : 4192941.482031941,
+                "99.99" : 4192941.482031941,
+                "99.999" : 4192941.482031941,
+                "99.9999" : 4192941.482031941,
+                "100.0" : 4192941.482031941
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    4173994.000877749,
+                    4192941.482031941,
+                    4190523.231586609,
+                    4161757.401446296,
+                    3887405.8522925787
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+            "readSynchronizedVolatile" : {
+                "score" : 4114131.6400973657,
+                "scoreError" : 505883.3471780958,
+                "scoreConfidence" : [
+                    3608248.2929192698,
+                    4620014.987275462
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 3880223.47479044,
+                    "50.0" : 4166820.8455080073,
+                    "90.0" : 4185747.5007625665,
+                    "95.0" : 4185747.5007625665,
+                    "99.0" : 4185747.5007625665,
+                    "99.9" : 4185747.5007625665,
+                    "99.99" : 4185747.5007625665,
+                    "99.999" : 4185747.5007625665,
+                    "99.9999" : 4185747.5007625665,
+                    "100.0" : 4185747.5007625665
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        4166820.8455080073,
+                        4185747.5007625665,
+                        4183329.268360913,
+                        4154537.1110648992,
+                        3880223.47479044
+                    ]
+                ]
+            },
+            "writeSynchronizedVolatile" : {
+                "score" : 7192.7535496696655,
+                "scoreError" : 68.15201190624146,
+                "scoreConfidence" : [
+                    7124.601537763424,
+                    7260.905561575907
+                ],
+                "scorePercentiles" : {
+                    "0.0" : 7173.155369741931,
+                    "50.0" : 7193.963225696031,
+                    "90.0" : 7220.290381396478,
+                    "95.0" : 7220.290381396478,
+                    "99.0" : 7220.290381396478,
+                    "99.9" : 7220.290381396478,
+                    "99.99" : 7220.290381396478,
+                    "99.999" : 7220.290381396478,
+                    "99.9999" : 7220.290381396478,
+                    "100.0" : 7220.290381396478
+                },
+                "scoreUnit" : "ops/ms",
+                "rawData" : [
+                    [
+                        7173.155369741931,
+                        7193.981269374482,
+                        7193.963225696031,
+                        7220.290381396478,
+                        7182.3775021394085
+                    ]
+                ]
+            }
+        }
+    }
+]
+
+

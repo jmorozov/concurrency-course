@@ -1,6 +1,7 @@
 package course.concurrency.m3_shared.benchmarks;
 
 import org.openjdk.jmh.annotations.*;
+import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -17,9 +18,23 @@ import java.util.concurrent.locks.*;
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 public class CounterBenchmarks {
 
+    private static final int lowLoadN = 8 / 2;
+    private static final int normalLoadN = 8;
+    private static final int increasedLoadN = 8 * 2;
+    private static final int highLoadN = 8 * 3;
+
     // Change WRITERS and READERS to experiment
-    public static final int WRITERS = 7;
-    public static final int READERS = 1;
+//    public static final int WRITERS = 1;
+//    public static final int WRITERS = lowLoadN;
+    public static final int WRITERS = normalLoadN;
+//    public static final int WRITERS = increasedLoadN;
+//    public static final int WRITERS = highLoadN;
+    
+//    public static final int READERS = 1;
+//    public static final int READERS = lowLoadN;
+    public static final int READERS = normalLoadN;
+//    public static final int READERS = increasedLoadN;
+//    public static final int READERS = highLoadN;
 
     private final AtomicLong atomicLongCounter = new AtomicLong();
     private final LongAdder longAdderCounter = new LongAdder();
@@ -41,7 +56,7 @@ public class CounterBenchmarks {
     private volatile long volatileValue;
     private long newValue;
     private long tmp = 0;
-
+    
     @Setup
     public void setup() {
         tmp++;
@@ -55,8 +70,8 @@ public class CounterBenchmarks {
         Options options = new OptionsBuilder()
                 .include(CounterBenchmarks.class.getName())
                 .forks(1)
-//                .resultFormat(ResultFormatType.JSON)
-//                .result("benchmark-result.json")
+                .resultFormat(ResultFormatType.JSON)
+                .result("benchmark-result.json")
                 .build();
 
         new Runner(options).run();
