@@ -4,20 +4,17 @@ import static course.concurrency.exams.refactoring.Others.*;
 
 import java.util.concurrent.CountDownLatch;
 
-public class MountTableRefresherThread extends Thread {
+public class MountTableRefreshTask {
 
     private boolean success;
     /** Admin server on which refreshed to be invoked. */
     private String adminAddress;
-    private CountDownLatch countDownLatch;
     private MountTableManager manager;
 
-    public MountTableRefresherThread(MountTableManager manager,
-                                     String adminAddress) {
+    public MountTableRefreshTask(MountTableManager manager,
+                                 String adminAddress) {
         this.manager = manager;
         this.adminAddress = adminAddress;
-        setName("MountTableRefresh_" + adminAddress);
-        setDaemon(true);
     }
 
     /**
@@ -32,13 +29,8 @@ public class MountTableRefresherThread extends Thread {
      * cache locally it need not to make RPC call. But R1 will make RPC calls to
      * update cache on R2 and R3.
      */
-    @Override
-    public void run() {
-        try {
-            success = manager.refresh();
-        } finally {
-            countDownLatch.countDown();
-        }
+    public void refresh() {
+        success = manager.refresh();
     }
 
     /**
@@ -48,13 +40,9 @@ public class MountTableRefresherThread extends Thread {
         return success;
     }
 
-    public void setCountDownLatch(CountDownLatch countDownLatch) {
-        this.countDownLatch = countDownLatch;
-    }
-
     @Override
     public String toString() {
-        return "MountTableRefreshThread [success=" + success + ", adminAddress="
+        return "MountTableRefreshTask [success=" + success + ", adminAddress="
                 + adminAddress + "]";
     }
 
